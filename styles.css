@@ -1,0 +1,6365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Style alll elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px 10%;
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: auto;
+    z-index: 999;
+    width: 100%;
+}
+
+/*Navbar*/
+
+
+/*Home Section*/
+
+
+/*aside*/
+
+
+
+/*footer*/
+footer .footer-section {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px 15px 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+/******************* MEDIA QUERIES *******************/
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) { 
+
+    /*Container*/
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+      
+    
+    /*Header*/   
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-color: #343a40;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /*Navbar*/
+    .nav__toggle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+      }
+      
+      .nav__burger, 
+      .nav__close {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        inset: 0;
+        margin: auto;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: opacity .1s, transform .4s;
+      }
+      
+      .nav__close {
+        opacity: 0;
+      }
+
+
+    /*Nav Logo*/
+    nav .logo-link {
+        display: block;
+        text-align: center;
+    }
+    /*Nav Logo Img*/
+    nav .logo-img {
+       width: 40%;
+    }
+    /*Nav Logo Slogan*/
+    nav .logo-slogan {
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    /*Nav Menu*/
+    nav ul {
+        display: none;
+    }        
+    /*Home Section*/
+    .home {
+        margin-top: 5rem;
+    }
+    /*Home Image*/
+    .home .home-img {
+        position: relative;
+        width: 170%;
+        margin-top: 0rem;        
+        text-align: center;
+    }
+    /*Content Bubble*/
+    .home .content-bubble {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        width: 60vw;
+        height: auto;
+        background-color: #f8f8f80e;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+     /*c-b0*/
+     .home .c-b0 {
+        margin-bottom: 40rem;
+        border-left: solid 0.2rem #1562d6;
+    }
+    /*c-b1*/
+    .home .c-b1 {
+        margin-bottom: 24rem;
+        border-left: solid 0.2rem #e61919;
+    }
+    /*c-b2*/
+    .home .c-b2 {
+        margin-bottom: 8rem;
+        border-left: solid 0.2rem #c2bdbd;
+    }
+    /*More Content Button*/
+    .home .more-content-btn {
+        display: flex;
+        margin: 0rem 0.5rem 1rem 0.5rem;
+        background-color: #1562d6;
+        color: #fff;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+    /*More Content Tech*/
+    .home .more-content-btn .more-content-tech {
+        color: #fff;
+        background: #06941d;
+        width: 33.3%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content finance*/
+    .home .more-content-btn .more-content-finance {
+        color: #fff;
+        background: #65cc2a;
+        width: 33.3%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content eductaion*/
+    .home .more-content-btn .more-content-education {
+        color: #fff;
+        background: #c9cc2a;
+        width: 33.3%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content Health*/
+    .home .more-content-btn .more-content-health {
+        color: #fff;
+        background: #e6df87;
+        width: 33.3%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    
+/* -------Profile------ */
+
+/*Profile-view*/
+.profile .profile-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2rem 1.5rem 0.8rem 1.5rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffa8);
+}
+
+/*Profile-name*/
+.profile .flex-profile-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Profile Header*/
+.profile h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*btn-Open-Close profile*/
+#openCloseProfile {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*Profile Preview Image*/
+.profile .profile-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 30vh;
+    width: 55%;
+    height: 30vh;
+    background-image: url('./images/Capelanet_Consultant.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Profile Preview Text*/
+.profile .profile-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+/*Profile Under Line*/
+.profile .profile-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*Profile toggle*/
+.profile .profile-toggle {
+    display: none;
+    text-align: center;
+}
+
+/*Profile-img*/
+.profile .profile-img {
+    width: 50%;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+/*Profile Header 2*/
+.profile h2 {
+    margin-bottom: 1rem;
+}
+
+/*Additional Content*/
+.profile .additional-content {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/*Preview Text*/
+.profile .preview-text {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.additional-content-section {
+    display: none;
+}
+
+/*Read more Button*/
+#toggleButton {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+    
+#toggleButton:hover {
+    background-color: #007B9A; /* Darken the button a bit when hovered */
+}
+
+/*News Anchor*/
+.news-anchor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #c4c2c2a8);
+}
+
+/*Social Diagram Img*/
+.news-anchor .social-diagram {
+    width: 70%;
+    float: left;
+}
+
+/*News Anchor Image*/
+.news-anchor .news-anchor-img{
+    width: 70%;
+    float: right;
+        
+}
+
+/*Profile line below*/
+.profile .profile-line-below {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+}
+
+
+    /* --------NEWS SECTION------- */
+ 
+/*News View*/
+.news .news-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*News-name*/
+.news .flex-news-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*News Header*/
+.news h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*News Preview Image*/
+.news .news-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 30vh;
+    height: 30vh;
+    background-image: url('./images/Techyana_Emp_NoBG.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*News Preview Text*/
+.news .news-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+/*News Under Line*/
+.news .news-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*News Toggle*/
+.news .news-toggle {
+    display: none;
+}
+
+/*btn-Open-Close News*/
+#openCloseNews {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*News Image Tile*/
+.news .bgNews-img-tile {
+    position: relative;
+    background-image: url('./images/Eskom_Loadshedding.jpg');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;    
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+/*News Top Text*/
+.news .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*News Time Stamp*/
+.news .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*News Lower Banner*/
+.news .lower-banner-news-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.news .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.news .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.news .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;    
+}
+
+/*News Article One*/
+.news .article-news-one p{
+    margin: 1rem 0;
+}
+
+/*Comment Section*/
+.news .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.news .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.news .comment-section input[type="text"],
+.news .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.news .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.news .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.news .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.news .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.news .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.news .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+/* --------ENTERTAINMENT SECTION------- */
+ 
+/*Entertainment View*/
+.entertainment .entertainment-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*entertainment-name*/
+.entertainment .flex-entertainment-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Entertainment Header*/
+.entertainment h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Entertainment Preview Image*/
+.entertainment .entertainment-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 30vh;
+    background-image: url('./images/Chef_Capelanet.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Entertainment Preview Text*/
+.entertainment .entertainment-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+/*entertainment Under Line*/
+.entertainment .entertainment-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*entertainment Toggle*/
+.entertainment .entertainment-toggle {
+    display: none;
+}
+
+/*btn-Open-Close entertainment*/
+#openCloseEntertainment {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*entertainment Image Tile*/
+.entertainment .bgEntertainment-img-tile {
+    position: relative;
+    background-image: url('./images/JCole.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;    
+    margin: 2rem 0rem; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*entertainment Top Text*/
+.entertainment .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*entertainment Time Stamp*/
+.entertainment .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*entertainment Lower Banner*/
+.entertainment .lower-banner-entertainment-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.entertainment .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.entertainment .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.entertainment .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;    
+}
+
+/*entertainment Article One*/
+.entertainment .article-entertainment-one p{
+    margin: 1rem 0;
+}
+
+
+/*Comment Section*/
+.entertainment .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.entertainment .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.entertainment .comment-section input[type="text"],
+.entertainment .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.entertainment .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.entertainment .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.entertainment .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.entertainment .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.entertainment .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.entertainment .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;   
+}
+
+
+/* --------SPORTS SECTION------- */
+
+/*Sports View*/
+.sports .sports-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*sports-name*/
+.sports .flex-sports-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Sports Header*/
+.sports h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Sports Preview Image*/
+.sports .sports-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 30vh;
+    background-image: url('./images/Capelanet_Coach.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Sports Preview Text*/
+.sports .sports-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+/*sports Under Line*/
+.sports .sports-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}   
+
+/*sports Toggle*/
+.sports .sports-toggle {
+    display: none;
+}   
+
+/*btn-Open-Close sports*/
+#openCloseSports {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*sports Image Tile*/
+.sports .bgSports-img-tile {
+    position: relative;
+    background-image: url('./images/09nba-playoffs-ballhandlers.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*sports Top Text*/
+.sports .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*sports Time Stamp*/
+.sports .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*sports Lower Banner*/
+.sports .lower-banner-sports-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.sports .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.sports .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.sports .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;
+}
+
+/*sports Article One*/
+.sports .article-sports-one p{
+    margin: 1rem 0;
+}
+
+/*Comment Section*/
+.sports .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.sports .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.sports .comment-section input[type="text"],
+.sports .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.sports .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.sports .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.sports .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.sports .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.sports .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.sports .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* --------FINANCE SECTION------- */
+
+/*Finance View*/
+.finance .finance-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*finance-name*/
+.finance .flex-finance-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Finance Header*/
+.finance h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Finance Preview Image*/
+.finance .finance-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 30vh;
+    background-image: url('./images/Techyana_Manager_Emp.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Finance Preview Text*/
+.finance .finance-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+/*finance Under Line*/
+.finance .finance-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*finance Toggle*/
+.finance .finance-toggle {
+    display: none;
+}
+
+/*btn-Open-Close finance*/
+#openCloseFinance {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*finance Image Tile*/
+.finance .bgFinance-img-tile {
+    position: relative;
+    background-image: url('./images/Luvuyo_Bhele.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*finance Top Text*/
+.finance .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*finance Time Stamp*/
+.finance .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*finance Lower Banner*/
+.finance .lower-banner-finance-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.finance .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.finance .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.finance .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;
+}
+
+/*finance Article One*/
+.finance .article-finance-one p{
+    margin: 1rem 0;
+}
+
+/*Comment Section*/
+.finance .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.finance .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.finance .comment-section input[type="text"],
+.finance .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.finance .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.finance .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.finance .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.finance .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.finance .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.finance .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+
+
+
+
+    /*footer*/
+     footer {
+        padding: 0.5rem 0;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  /*Container*/
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+
+/*Header*/   
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Navbar*/
+.nav__toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+
+
+/*Nav Logo*/
+nav .logo-link {
+    display: block;
+    text-align: center;
+}
+/*Nav Logo Img*/
+nav .logo-img {
+   width: 40%;
+}
+/*Nav Logo Slogan*/
+nav .logo-slogan {
+    color: #fff;
+    font-size: 0.7rem;
+}
+/*Nav Menu*/
+nav ul {
+    display: none;
+}        
+/*Home Section*/
+.home {
+    margin-top: 5rem;
+}
+/*Home Image*/
+.home .home-img {
+    position: relative;
+    width: 170%;
+    margin-top: 0rem;        
+    text-align: center;
+}
+/*Content Bubble*/
+.home .content-bubble {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    width: 60vw;
+    height: auto;
+    background-color: #f8f8f80e;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+ /*c-b0*/
+ .home .c-b0 {
+    margin-bottom: 40rem;
+    border-left: solid 0.2rem #1562d6;
+}
+/*c-b1*/
+.home .c-b1 {
+    margin-bottom: 24rem;
+    border-left: solid 0.2rem #e61919;
+}
+/*c-b2*/
+.home .c-b2 {
+    margin-bottom: 8rem;
+    border-left: solid 0.2rem #c2bdbd;
+}
+/*More Content Button*/
+.home .more-content-btn {
+    display: flex;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+/*More Content Tech*/
+.home .more-content-btn .more-content-tech {
+    color: #fff;
+    background: #06941d;
+    width: 33.3%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content finance*/
+.home .more-content-btn .more-content-finance {
+    color: #fff;
+    background: #65cc2a;
+    width: 33.3%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content eductaion*/
+.home .more-content-btn .more-content-education {
+    color: #fff;
+    background: #c9cc2a;
+    width: 33.3%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content Health*/
+.home .more-content-btn .more-content-health {
+    color: #fff;
+    background: #e6df87;
+    width: 33.3%;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* -------Profile------ */
+
+/*Profile-view*/
+.profile .profile-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+padding: 2rem 1.5rem 0.8rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffa8);
+}
+
+/*Profile-name*/
+.profile .flex-profile-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Profile Header*/
+.profile h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*btn-Open-Close profile*/
+#openCloseProfile {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*Profile Preview Image*/
+.profile .profile-preview-img {
+position: absolute;
+bottom: 0;
+width: 70%;
+height: 30vh;
+width: 55%;
+height: 30vh;
+background-image: url('./images/Capelanet_Consultant.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Profile Preview Text*/
+.profile .profile-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+}
+
+/*Profile Under Line*/
+.profile .profile-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*Profile toggle*/
+.profile .profile-toggle {
+display: none;
+text-align: center;
+}
+
+/*Profile-img*/
+.profile .profile-img {
+width: 50%;
+margin: 2rem 0;
+border-radius: 50%;
+}
+
+/*Profile Header 2*/
+.profile h2 {
+margin-bottom: 1rem;
+}
+
+/*Additional Content*/
+.profile .additional-content {
+margin-top: 1rem;
+text-align: justify;
+}
+
+/*Preview Text*/
+.profile .preview-text {
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.additional-content-section {
+display: none;
+}
+
+/*Read more Button*/
+#toggleButton {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+background-color: #007B9A; /* Darken the button a bit when hovered */
+}
+
+/*News Anchor*/
+.news-anchor {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #c4c2c2a8);
+}
+
+/*Social Diagram Img*/
+.news-anchor .social-diagram {
+width: 70%;
+float: left;
+}
+
+/*News Anchor Image*/
+.news-anchor .news-anchor-img{
+width: 70%;
+float: right;
+    
+}
+
+/*Profile line below*/
+.profile .profile-line-below {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+}
+
+
+/* --------NEWS SECTION------- */
+
+/*News View*/
+.news .news-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*News-name*/
+.news .flex-news-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*News Header*/
+.news h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*News Preview Image*/
+.news .news-preview-img {
+position: absolute;
+bottom: 0;
+width: 60%;
+height: 30vh;
+height: 30vh;
+background-image: url('./images/Techyana_Emp_NoBG.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*News Preview Text*/
+.news .news-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+}
+
+/*News Under Line*/
+.news .news-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*News Toggle*/
+.news .news-toggle {
+display: none;
+}
+
+/*btn-Open-Close News*/
+#openCloseNews {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*News Image Tile*/
+.news .bgNews-img-tile {
+position: relative;
+background-image: url('./images/Eskom_Loadshedding.jpg');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;    
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+/*News Top Text*/
+.news .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*News Time Stamp*/
+.news .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*News Lower Banner*/
+.news .lower-banner-news-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.news .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.news .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.news .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*News Article One*/
+.news .article-news-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.news .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.news .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.news .comment-section input[type="text"],
+.news .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.news .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.news .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.news .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.news .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.news .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.news .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+/* --------ENTERTAINMENT SECTION------- */
+
+/*Entertainment View*/
+.entertainment .entertainment-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*entertainment-name*/
+.entertainment .flex-entertainment-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Entertainment Header*/
+.entertainment h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Entertainment Preview Image*/
+.entertainment .entertainment-preview-img {
+position: absolute;
+bottom: 0;
+width: 70%;
+height: 30vh;
+background-image: url('./images/Chef_Capelanet.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Entertainment Preview Text*/
+.entertainment .entertainment-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+}
+
+/*entertainment Under Line*/
+.entertainment .entertainment-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*entertainment Toggle*/
+.entertainment .entertainment-toggle {
+display: none;
+}
+
+/*btn-Open-Close entertainment*/
+#openCloseEntertainment {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*entertainment Image Tile*/
+.entertainment .bgEntertainment-img-tile {
+position: relative;
+background-image: url('./images/JCole.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;    
+margin: 2rem 0rem; 
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*entertainment Top Text*/
+.entertainment .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*entertainment Time Stamp*/
+.entertainment .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*entertainment Lower Banner*/
+.entertainment .lower-banner-entertainment-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.entertainment .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.entertainment .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.entertainment .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*entertainment Article One*/
+.entertainment .article-entertainment-one p{
+margin: 1rem 0;
+}
+
+
+/*Comment Section*/
+.entertainment .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.entertainment .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.entertainment .comment-section input[type="text"],
+.entertainment .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.entertainment .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.entertainment .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.entertainment .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.entertainment .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.entertainment .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.entertainment .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;   
+}
+
+
+/* --------SPORTS SECTION------- */
+
+/*Sports View*/
+.sports .sports-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*sports-name*/
+.sports .flex-sports-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Sports Header*/
+.sports h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Sports Preview Image*/
+.sports .sports-preview-img {
+position: absolute;
+bottom: 0;
+width: 70%;
+height: 30vh;
+background-image: url('./images/Capelanet_Coach.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Sports Preview Text*/
+.sports .sports-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+}
+
+/*sports Under Line*/
+.sports .sports-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}   
+
+/*sports Toggle*/
+.sports .sports-toggle {
+display: none;
+}   
+
+/*btn-Open-Close sports*/
+#openCloseSports {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*sports Image Tile*/
+.sports .bgSports-img-tile {
+position: relative;
+background-image: url('./images/09nba-playoffs-ballhandlers.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*sports Top Text*/
+.sports .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*sports Time Stamp*/
+.sports .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*sports Lower Banner*/
+.sports .lower-banner-sports-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.sports .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.sports .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.sports .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*sports Article One*/
+.sports .article-sports-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.sports .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.sports .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.sports .comment-section input[type="text"],
+.sports .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.sports .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.sports .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.sports .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.sports .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.sports .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.sports .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+/* --------FINANCE SECTION------- */
+
+/*Finance View*/
+.finance .finance-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*finance-name*/
+.finance .flex-finance-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Finance Header*/
+.finance h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Finance Preview Image*/
+.finance .finance-preview-img {
+position: absolute;
+bottom: 0;
+width: 70%;
+height: 30vh;
+background-image: url('./images/Techyana_Manager_Emp.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Finance Preview Text*/
+.finance .finance-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+}
+
+/*finance Under Line*/
+.finance .finance-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*finance Toggle*/
+.finance .finance-toggle {
+display: none;
+}
+
+/*btn-Open-Close finance*/
+#openCloseFinance {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*finance Image Tile*/
+.finance .bgFinance-img-tile {
+position: relative;
+background-image: url('./images/Luvuyo_Bhele.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*finance Top Text*/
+.finance .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*finance Time Stamp*/
+.finance .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*finance Lower Banner*/
+.finance .lower-banner-finance-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.finance .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.finance .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.finance .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*finance Article One*/
+.finance .article-finance-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.finance .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.finance .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.finance .comment-section input[type="text"],
+.finance .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.finance .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.finance .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.finance .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.finance .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.finance .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.finance .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+
+
+
+
+/*footer*/
+ footer {
+    padding: 0.5rem 0;
+}   
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) { 
+/*Container*/
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+
+/*Header*/   
+header {
+    padding: 20px 0;
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/*Navbar*/
+.nav__toggle {
+    display: none;
+  }
+
+/*Nav Logo*/
+nav .logo-link {
+    display: block;
+}
+/*Nav Logo Img*/
+nav .logo-img {
+   width: 40%;
+}
+/*Nav Logo Slogan*/
+nav .logo-slogan {
+    color: #fff;
+    font-size: 0.7rem;
+}
+/*Nav Menu*/
+nav ul {
+    display: none;
+}        
+/*Home Section*/
+.home {
+    margin-top: 5rem;
+}
+/*Home Image*/
+.home .home-img {
+    position: relative;
+    width: 15%;
+    margin-top: 1.8rem;
+    left: 0%;
+}
+/*Content Bubble*/
+.home .content-bubble {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    width: 60vw;
+    height: auto;
+    background-color: #f8f8f80e;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+ /*c-b0*/
+ .home .c-b0 {
+    margin-bottom: 40rem;
+    border-left: solid 0.2rem #1562d6;
+    width: 20vw;
+    right: 50%;
+}
+/*c-b1*/
+.home .c-b1 {
+    margin-bottom: 28rem;
+    border-left: solid 0.2rem #e61919;
+    width: 20vw;
+    right: 50%;
+}
+/*c-b2*/
+.home .c-b2 {
+    margin-bottom: 16rem;
+    border-left: solid 0.2rem #c2bdbd;
+    width: 20vw;
+    right: 50%;
+}
+/*More Content Button*/
+.home .more-content-btn {
+    display: flex;
+    margin: -0.5rem 0.5rem 1rem 0rem;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    width: 70%;
+}
+/*More Content Tech*/
+.home .more-content-btn .more-content-tech {
+    color: #fff;
+    background: #06941d;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content finance*/
+.home .more-content-btn .more-content-finance {
+    color: #fff;
+    background: #65cc2a;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content eductaion*/
+.home .more-content-btn .more-content-education {
+    color: #fff;
+    background: #c9cc2a;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content Health*/
+.home .more-content-btn .more-content-health {
+    color: #fff;
+    background: #e6df87;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* -------Profile------ */
+
+/*Profile-view*/
+.profile .profile-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+padding: 2rem 1.5rem 0.8rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffa8);
+}
+
+/*Profile-name*/
+.profile .flex-profile-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Profile Header*/
+.profile h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*btn-Open-Close profile*/
+#openCloseProfile {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*Profile Preview Image*/
+.profile .profile-preview-img {
+position: absolute;
+bottom: 0;
+height: 30vh;
+width: 15%;
+height: 30vh;
+background-image: url('./images/Capelanet_Consultant.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Profile Preview Text*/
+.profile .profile-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*Profile Under Line*/
+.profile .profile-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*Profile toggle*/
+.profile .profile-toggle {
+display: none;
+text-align: center;
+}
+
+/*Profile-img*/
+.profile .profile-img {
+width: 10%;
+margin: 2rem 0;
+border-radius: 50%;
+}
+
+/*Profile Header 2*/
+.profile h2 {
+margin-bottom: 1rem;
+}
+
+/*Additional Content*/
+.profile .additional-content {
+margin-top: 1rem;
+text-align: justify;
+}
+
+/*Preview Text*/
+.profile .preview-text {
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.additional-content-section {
+display: none;
+}
+
+/*Read more Button*/
+#toggleButton {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: none;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+background-color: #007B9A; /* Darken the button a bit when hovered */
+}
+
+/*News Anchor*/
+.news-anchor {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #c4c2c2a8);
+}
+
+/*Social Diagram Img*/
+.news-anchor .social-diagram {
+width: 20%;
+float: left;
+}
+
+/*News Anchor Image*/
+.news-anchor .news-anchor-img{
+width: 20%;
+float: right;
+    
+}
+
+/*Profile line below*/
+.profile .profile-line-below {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+}
+
+
+/* --------NEWS SECTION------- */
+
+/*News View*/
+.news .news-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*News-name*/
+.news .flex-news-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*News Header*/
+.news h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*News Preview Image*/
+.news .news-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+height: 30vh;
+background-image: url('./images/Techyana_Emp_NoBG.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*News Preview Text*/
+.news .news-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*News Under Line*/
+.news .news-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*News Toggle*/
+.news .news-toggle {
+display: none;
+}
+
+/*btn-Open-Close News*/
+#openCloseNews {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*News Image Tile*/
+.news .bgNews-img-tile {
+position: relative;
+background-image: url('./images/Eskom_Loadshedding.jpg');
+display: block;
+background-size: cover;
+max-width: 25%;
+padding: 0;    
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+/*News Top Text*/
+.news .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*News Time Stamp*/
+.news .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*News Lower Banner*/
+.news .lower-banner-news-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.news .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.news .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.news .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*News Article One*/
+.news .article-news-one p{
+margin: 1rem 0;
+width: 25vw;
+}
+
+/*Comment Section*/
+.news .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.news .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.news .comment-section input[type="text"],
+.news .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+width: 25vw;
+}
+
+/*Comment Button*/
+.news .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+width: 25vw;
+}
+
+/*Comment List*/
+.news .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.news .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.news .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.news .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.news .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+/* --------ENTERTAINMENT SECTION------- */
+
+/*Entertainment View*/
+.entertainment .entertainment-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*entertainment-name*/
+.entertainment .flex-entertainment-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Entertainment Header*/
+.entertainment h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Entertainment Preview Image*/
+.entertainment .entertainment-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Chef_Capelanet.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Entertainment Preview Text*/
+.entertainment .entertainment-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*entertainment Under Line*/
+.entertainment .entertainment-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*entertainment Toggle*/
+.entertainment .entertainment-toggle {
+display: none;
+}
+
+/*btn-Open-Close entertainment*/
+#openCloseEntertainment {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*entertainment Image Tile*/
+.entertainment .bgEntertainment-img-tile {
+position: relative;
+background-image: url('./images/JCole.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;    
+margin: 2rem 0rem; 
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*entertainment Top Text*/
+.entertainment .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*entertainment Time Stamp*/
+.entertainment .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*entertainment Lower Banner*/
+.entertainment .lower-banner-entertainment-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.entertainment .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.entertainment .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.entertainment .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*entertainment Article One*/
+.entertainment .article-entertainment-one p{
+margin: 1rem 0;
+}
+
+
+/*Comment Section*/
+.entertainment .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.entertainment .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.entertainment .comment-section input[type="text"],
+.entertainment .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.entertainment .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.entertainment .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.entertainment .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.entertainment .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.entertainment .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.entertainment .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;   
+}
+
+
+/* --------SPORTS SECTION------- */
+
+/*Sports View*/
+.sports .sports-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*sports-name*/
+.sports .flex-sports-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Sports Header*/
+.sports h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Sports Preview Image*/
+.sports .sports-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Capelanet_Coach.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Sports Preview Text*/
+.sports .sports-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*sports Under Line*/
+.sports .sports-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}   
+
+/*sports Toggle*/
+.sports .sports-toggle {
+display: none;
+}   
+
+/*btn-Open-Close sports*/
+#openCloseSports {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*sports Image Tile*/
+.sports .bgSports-img-tile {
+position: relative;
+background-image: url('./images/09nba-playoffs-ballhandlers.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*sports Top Text*/
+.sports .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*sports Time Stamp*/
+.sports .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*sports Lower Banner*/
+.sports .lower-banner-sports-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.sports .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.sports .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.sports .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*sports Article One*/
+.sports .article-sports-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.sports .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.sports .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.sports .comment-section input[type="text"],
+.sports .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.sports .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.sports .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.sports .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.sports .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.sports .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.sports .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+/* --------FINANCE SECTION------- */
+
+/*Finance View*/
+.finance .finance-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*finance-name*/
+.finance .flex-finance-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Finance Header*/
+.finance h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Finance Preview Image*/
+.finance .finance-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Techyana_Manager_Emp.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Finance Preview Text*/
+.finance .finance-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*finance Under Line*/
+.finance .finance-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*finance Toggle*/
+.finance .finance-toggle {
+display: none;
+}
+
+/*btn-Open-Close finance*/
+#openCloseFinance {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*finance Image Tile*/
+.finance .bgFinance-img-tile {
+position: relative;
+background-image: url('./images/Luvuyo_Bhele.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*finance Top Text*/
+.finance .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*finance Time Stamp*/
+.finance .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*finance Lower Banner*/
+.finance .lower-banner-finance-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.finance .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.finance .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.finance .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*finance Article One*/
+.finance .article-finance-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.finance .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.finance .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.finance .comment-section input[type="text"],
+.finance .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.finance .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.finance .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.finance .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.finance .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.finance .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.finance .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+
+
+
+
+/*footer*/
+ footer {
+    padding: 0.5rem 0;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) { 
+/*Container*/
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+
+/*Header*/   
+header {
+    padding: 20px 0;
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/*Navbar*/
+.nav__toggle {
+    display: none;
+  }
+
+/*Nav Logo*/
+nav .logo-link {
+    display: block;
+}
+/*Nav Logo Img*/
+nav .logo-img {
+   width: 40%;
+}
+/*Nav Logo Slogan*/
+nav .logo-slogan {
+    color: #fff;
+    font-size: 0.7rem;
+}
+/*Nav Menu*/
+nav ul {
+    display: none;
+}        
+/*Home Section*/
+.home {
+    margin-top: 5rem;
+}
+/*Home Image*/
+.home .home-img {
+    position: relative;
+    width: 15%;
+    margin-top: 1.8rem;
+    left: 0%;
+}
+/*Content Bubble*/
+.home .content-bubble {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    width: 60vw;
+    height: auto;
+    background-color: #f8f8f80e;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+ /*c-b0*/
+ .home .c-b0 {
+    margin-bottom: 40rem;
+    border-left: solid 0.2rem #1562d6;
+    width: 20vw;
+    right: 50%;
+}
+/*c-b1*/
+.home .c-b1 {
+    margin-bottom: 28rem;
+    border-left: solid 0.2rem #e61919;
+    width: 20vw;
+    right: 50%;
+}
+/*c-b2*/
+.home .c-b2 {
+    margin-bottom: 16rem;
+    border-left: solid 0.2rem #c2bdbd;
+    width: 20vw;
+    right: 50%;
+}
+/*More Content Button*/
+.home .more-content-btn {
+    display: flex;
+    margin: -0.5rem 0.5rem 1rem 0rem;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    width: 70%;
+}
+/*More Content Tech*/
+.home .more-content-btn .more-content-tech {
+    color: #fff;
+    background: #06941d;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content finance*/
+.home .more-content-btn .more-content-finance {
+    color: #fff;
+    background: #65cc2a;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content eductaion*/
+.home .more-content-btn .more-content-education {
+    color: #fff;
+    background: #c9cc2a;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+/*More Content Health*/
+.home .more-content-btn .more-content-health {
+    color: #fff;
+    background: #e6df87;
+    width: 10%;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* -------Profile------ */
+
+/*Profile-view*/
+.profile .profile-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+padding: 2rem 1.5rem 0.8rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffa8);
+}
+
+/*Profile-name*/
+.profile .flex-profile-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Profile Header*/
+.profile h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*btn-Open-Close profile*/
+#openCloseProfile {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*Profile Preview Image*/
+.profile .profile-preview-img {
+position: absolute;
+bottom: 0;
+height: 30vh;
+width: 15%;
+height: 30vh;
+background-image: url('./images/Capelanet_Consultant.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Profile Preview Text*/
+.profile .profile-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*Profile Under Line*/
+.profile .profile-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*Profile toggle*/
+.profile .profile-toggle {
+display: none;
+text-align: center;
+}
+
+/*Profile-img*/
+.profile .profile-img {
+width: 10%;
+margin: 2rem 0;
+border-radius: 50%;
+}
+
+/*Profile Header 2*/
+.profile h2 {
+margin-bottom: 1rem;
+}
+
+/*Additional Content*/
+.profile .additional-content {
+margin-top: 1rem;
+text-align: justify;
+}
+
+/*Preview Text*/
+.profile .preview-text {
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.additional-content-section {
+display: none;
+}
+
+/*Read more Button*/
+#toggleButton {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: none;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+background-color: #007B9A; /* Darken the button a bit when hovered */
+}
+
+/*News Anchor*/
+.news-anchor {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0rem 1.5rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #c4c2c2a8);
+}
+
+/*Social Diagram Img*/
+.news-anchor .social-diagram {
+width: 20%;
+float: left;
+}
+
+/*News Anchor Image*/
+.news-anchor .news-anchor-img{
+width: 20%;
+float: right;
+    
+}
+
+/*Profile line below*/
+.profile .profile-line-below {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+}
+
+
+/* --------NEWS SECTION------- */
+
+/*News View*/
+.news .news-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*News-name*/
+.news .flex-news-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*News Header*/
+.news h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*News Preview Image*/
+.news .news-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+height: 30vh;
+background-image: url('./images/Techyana_Emp_NoBG.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*News Preview Text*/
+.news .news-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*News Under Line*/
+.news .news-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*News Toggle*/
+.news .news-toggle {
+display: none;
+}
+
+/*btn-Open-Close News*/
+#openCloseNews {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*News Image Tile*/
+.news .bgNews-img-tile {
+position: relative;
+background-image: url('./images/Eskom_Loadshedding.jpg');
+display: block;
+background-size: cover;
+max-width: 25%;
+padding: 0;    
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+/*News Top Text*/
+.news .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*News Time Stamp*/
+.news .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*News Lower Banner*/
+.news .lower-banner-news-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.news .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.news .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.news .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*News Article One*/
+.news .article-news-one p{
+margin: 1rem 0;
+width: 25vw;
+}
+
+/*Comment Section*/
+.news .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.news .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.news .comment-section input[type="text"],
+.news .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+width: 25vw;
+}
+
+/*Comment Button*/
+.news .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+width: 25vw;
+}
+
+/*Comment List*/
+.news .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.news .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.news .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.news .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.news .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+/* --------ENTERTAINMENT SECTION------- */
+
+/*Entertainment View*/
+.entertainment .entertainment-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*entertainment-name*/
+.entertainment .flex-entertainment-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Entertainment Header*/
+.entertainment h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Entertainment Preview Image*/
+.entertainment .entertainment-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Chef_Capelanet.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Entertainment Preview Text*/
+.entertainment .entertainment-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*entertainment Under Line*/
+.entertainment .entertainment-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*entertainment Toggle*/
+.entertainment .entertainment-toggle {
+display: none;
+}
+
+/*btn-Open-Close entertainment*/
+#openCloseEntertainment {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*entertainment Image Tile*/
+.entertainment .bgEntertainment-img-tile {
+position: relative;
+background-image: url('./images/JCole.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;    
+margin: 2rem 0rem; 
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*entertainment Top Text*/
+.entertainment .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*entertainment Time Stamp*/
+.entertainment .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*entertainment Lower Banner*/
+.entertainment .lower-banner-entertainment-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.entertainment .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.entertainment .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.entertainment .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;    
+}
+
+/*entertainment Article One*/
+.entertainment .article-entertainment-one p{
+margin: 1rem 0;
+}
+
+
+/*Comment Section*/
+.entertainment .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.entertainment .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.entertainment .comment-section input[type="text"],
+.entertainment .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.entertainment .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.entertainment .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.entertainment .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.entertainment .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.entertainment .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.entertainment .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;   
+}
+
+
+/* --------SPORTS SECTION------- */
+
+/*Sports View*/
+.sports .sports-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*sports-name*/
+.sports .flex-sports-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Sports Header*/
+.sports h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Sports Preview Image*/
+.sports .sports-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Capelanet_Coach.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Sports Preview Text*/
+.sports .sports-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*sports Under Line*/
+.sports .sports-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}   
+
+/*sports Toggle*/
+.sports .sports-toggle {
+display: none;
+}   
+
+/*btn-Open-Close sports*/
+#openCloseSports {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*sports Image Tile*/
+.sports .bgSports-img-tile {
+position: relative;
+background-image: url('./images/09nba-playoffs-ballhandlers.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*sports Top Text*/
+.sports .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*sports Time Stamp*/
+.sports .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*sports Lower Banner*/
+.sports .lower-banner-sports-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.sports .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.sports .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.sports .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*sports Article One*/
+.sports .article-sports-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.sports .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.sports .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.sports .comment-section input[type="text"],
+.sports .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.sports .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.sports .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.sports .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.sports .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.sports .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.sports .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+/* --------FINANCE SECTION------- */
+
+/*Finance View*/
+.finance .finance-view {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+padding: 2rem 1.5rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*finance-name*/
+.finance .flex-finance-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+
+/*Finance Header*/
+.finance h1 {
+color: #0e0f11;
+padding-right: 1rem;
+border-top-right-radius: 0.4rem;
+border-bottom-right-radius: 0.4rem;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Finance Preview Image*/
+.finance .finance-preview-img {
+position: absolute;
+bottom: 0;
+width: 20%;
+height: 30vh;
+background-image: url('./images/Techyana_Manager_Emp.png');
+background-size: cover;
+z-index: -1;
+}
+
+/*Finance Preview Text*/
+.finance .finance-preview-text {
+position: absolute;
+bottom: 0;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
+background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+padding-bottom: 1rem;
+z-index: 0;
+width: 20vw;
+}
+
+/*finance Under Line*/
+.finance .finance-line {
+width: 100%;
+height: 0.2rem;
+background-color: #056eaa;
+margin-bottom: 1rem;
+}
+
+/*finance Toggle*/
+.finance .finance-toggle {
+display: none;
+}
+
+/*btn-Open-Close finance*/
+#openCloseFinance {
+background-color: #008CBA; /* Change to match your site's theme */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+margin-bottom: 0.4rem;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+/*finance Image Tile*/
+.finance .bgFinance-img-tile {
+position: relative;
+background-image: url('./images/Luvuyo_Bhele.png');
+display: block;
+background-size: cover;
+max-width: 100%;
+padding: 0;
+margin: 2rem 0rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+height: 28vh;
+}
+
+/*finance Top Text*/
+.finance .top-text {
+display: flex;
+justify-content: space-between;
+align-items:center;
+background: linear-gradient(to right, #2e2e2e, #ffffff00);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+padding: 0.5rem 0.5rem;
+}
+
+/*finance Time Stamp*/
+.finance .time-stamp {
+color: #ffffff;
+font-size: 0.8em;
+font-weight: 400;
+}
+
+/*finance Lower Banner*/
+.finance .lower-banner-finance-one {
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+background: linear-gradient(to right,#ffffff, #ffffff00);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+width: 100%;
+height: auto;
+padding: 0.5rem;
+}
+
+/*low banner image*/
+.finance .lower-banner-img-one {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 15vh;
+max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.finance .lower-banner-content-one h3 {
+color: #000000;
+font-size: 1em;
+padding: 0 0.5rem;
+font-weight: 500;
+width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.finance .lower-banner-content-one p {
+color: #000000;
+font-size: 0.8em;
+padding: 0 0.5rem;
+margin-top: 0.8rem;
+width: 75%;
+}
+
+/*finance Article One*/
+.finance .article-finance-one p{
+margin: 1rem 0;
+}
+
+/*Comment Section*/
+.finance .comment-section {
+margin-top: 2rem;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.finance .comment-section form {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.finance .comment-section input[type="text"],
+.finance .comment-section textarea {
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.finance .comment-section button {
+padding: 0.5rem 1rem;
+background-color: #1562d6;
+color: #fff;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+/*Comment List*/
+.finance .comment-section .comment-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/*Comment Item*/
+.finance .comment-section .comment-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.finance .comment-section .comment-item .comment-author {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.finance .comment-section .comment-item .comment-content {
+margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.finance .comment-section .comment-item .comment-timestamp {
+font-size: 0.8rem;
+color: #999;
+}
+
+
+
+
+
+
+/*footer*/
+ footer {
+    padding: 0.5rem 0;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) { 
+    /*Container*/
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+      
+    
+    /*Header*/   
+    header {
+        padding: 20px 0;
+        background-color: #343a40;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    /*Navbar*/
+    .nav__toggle {
+        display: none;
+      }
+    
+    /*Nav Logo*/
+    nav .logo-link {
+        display: block;
+    }
+    /*Nav Logo Img*/
+    nav .logo-img {
+       width: 40%;
+    }
+    /*Nav Logo Slogan*/
+    nav .logo-slogan {
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    /*Nav Menu*/
+    nav ul {
+        display: none;
+    }        
+    /*Home Section*/
+    .home {
+        margin-top: 5rem;
+    }
+    /*Home Image*/
+    .home .home-img {
+        position: relative;
+        width: 15%;
+        margin-top: 1.8rem;
+        left: 0%;
+    }
+    /*Content Bubble*/
+    .home .content-bubble {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        width: 60vw;
+        height: auto;
+        background-color: #f8f8f80e;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+     /*c-b0*/
+     .home .c-b0 {
+        margin-bottom: 40rem;
+        border-left: solid 0.2rem #1562d6;
+        width: 20vw;
+        right: 50%;
+    }
+    /*c-b1*/
+    .home .c-b1 {
+        margin-bottom: 28rem;
+        border-left: solid 0.2rem #e61919;
+        width: 20vw;
+        right: 50%;
+    }
+    /*c-b2*/
+    .home .c-b2 {
+        margin-bottom: 16rem;
+        border-left: solid 0.2rem #c2bdbd;
+        width: 20vw;
+        right: 50%;
+    }
+    /*More Content Button*/
+    .home .more-content-btn {
+        display: flex;
+        margin: -0.5rem 0.5rem 1rem 0rem;
+        background-color: #ffffff;
+        color: #fff;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        width: 70%;
+    }
+    /*More Content Tech*/
+    .home .more-content-btn .more-content-tech {
+        color: #fff;
+        background: #06941d;
+        width: 10%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content finance*/
+    .home .more-content-btn .more-content-finance {
+        color: #fff;
+        background: #65cc2a;
+        width: 10%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content eductaion*/
+    .home .more-content-btn .more-content-education {
+        color: #fff;
+        background: #c9cc2a;
+        width: 10%;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*More Content Health*/
+    .home .more-content-btn .more-content-health {
+        color: #fff;
+        background: #e6df87;
+        width: 10%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    
+/* -------Profile------ */
+
+/*Profile-view*/
+.profile .profile-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2rem 1.5rem 0.8rem 1.5rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffa8);
+}
+
+/*Profile-name*/
+.profile .flex-profile-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Profile Header*/
+.profile h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*btn-Open-Close profile*/
+#openCloseProfile {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*Profile Preview Image*/
+.profile .profile-preview-img {
+    position: absolute;
+    bottom: 0;
+    height: 30vh;
+    width: 15%;
+    height: 30vh;
+    background-image: url('./images/Capelanet_Consultant.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Profile Preview Text*/
+.profile .profile-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+    width: 20vw;
+}
+
+/*Profile Under Line*/
+.profile .profile-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*Profile toggle*/
+.profile .profile-toggle {
+    display: none;
+    text-align: center;
+}
+
+/*Profile-img*/
+.profile .profile-img {
+    width: 10%;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+/*Profile Header 2*/
+.profile h2 {
+    margin-bottom: 1rem;
+}
+
+/*Additional Content*/
+.profile .additional-content {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/*Preview Text*/
+.profile .preview-text {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.additional-content-section {
+    display: none;
+}
+
+/*Read more Button*/
+#toggleButton {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+    
+#toggleButton:hover {
+    background-color: #007B9A; /* Darken the button a bit when hovered */
+}
+
+/*News Anchor*/
+.news-anchor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #c4c2c2a8);
+}
+
+/*Social Diagram Img*/
+.news-anchor .social-diagram {
+    width: 20%;
+    float: left;
+}
+
+/*News Anchor Image*/
+.news-anchor .news-anchor-img{
+    width: 20%;
+    float: right;
+        
+}
+
+/*Profile line below*/
+.profile .profile-line-below {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+}
+
+
+    /* --------NEWS SECTION------- */
+ 
+/*News View*/
+.news .news-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*News-name*/
+.news .flex-news-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*News Header*/
+.news h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*News Preview Image*/
+.news .news-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 30vh;
+    height: 30vh;
+    background-image: url('./images/Techyana_Emp_NoBG.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*News Preview Text*/
+.news .news-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+    width: 20vw;
+}
+
+/*News Under Line*/
+.news .news-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*News Toggle*/
+.news .news-toggle {
+    display: none;
+}
+
+/*btn-Open-Close News*/
+#openCloseNews {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*News Image Tile*/
+.news .bgNews-img-tile {
+    position: relative;
+    background-image: url('./images/Eskom_Loadshedding.jpg');
+    display: block;
+    background-size: cover;
+    max-width: 25%;
+    padding: 0;    
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+/*News Top Text*/
+.news .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*News Time Stamp*/
+.news .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*News Lower Banner*/
+.news .lower-banner-news-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.news .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.news .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.news .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;    
+}
+
+/*News Article One*/
+.news .article-news-one p{
+    margin: 1rem 0;
+    width: 25vw;
+}
+
+/*Comment Section*/
+.news .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.news .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.news .comment-section input[type="text"],
+.news .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    width: 25vw;
+}
+
+/*Comment Button*/
+.news .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 25vw;
+}
+
+/*Comment List*/
+.news .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.news .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.news .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.news .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.news .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+/* --------ENTERTAINMENT SECTION------- */
+ 
+/*Entertainment View*/
+.entertainment .entertainment-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*entertainment-name*/
+.entertainment .flex-entertainment-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Entertainment Header*/
+.entertainment h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Entertainment Preview Image*/
+.entertainment .entertainment-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 30vh;
+    background-image: url('./images/Chef_Capelanet.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Entertainment Preview Text*/
+.entertainment .entertainment-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+    width: 20vw;
+}
+
+/*entertainment Under Line*/
+.entertainment .entertainment-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*entertainment Toggle*/
+.entertainment .entertainment-toggle {
+    display: none;
+}
+
+/*btn-Open-Close entertainment*/
+#openCloseEntertainment {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*entertainment Image Tile*/
+.entertainment .bgEntertainment-img-tile {
+    position: relative;
+    background-image: url('./images/JCole.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;    
+    margin: 2rem 0rem; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*entertainment Top Text*/
+.entertainment .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*entertainment Time Stamp*/
+.entertainment .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*entertainment Lower Banner*/
+.entertainment .lower-banner-entertainment-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.entertainment .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;    
+}
+
+/*Lower banner Content One Header*/
+.entertainment .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;    
+}
+
+/*Lower banner Content One Paragraph*/
+.entertainment .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;    
+}
+
+/*entertainment Article One*/
+.entertainment .article-entertainment-one p{
+    margin: 1rem 0;
+}
+
+
+/*Comment Section*/
+.entertainment .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.entertainment .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.entertainment .comment-section input[type="text"],
+.entertainment .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.entertainment .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.entertainment .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.entertainment .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.entertainment .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.entertainment .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.entertainment .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;   
+}
+
+
+/* --------SPORTS SECTION------- */
+
+/*Sports View*/
+.sports .sports-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*sports-name*/
+.sports .flex-sports-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Sports Header*/
+.sports h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Sports Preview Image*/
+.sports .sports-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 30vh;
+    background-image: url('./images/Capelanet_Coach.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Sports Preview Text*/
+.sports .sports-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+    width: 20vw;
+}
+
+/*sports Under Line*/
+.sports .sports-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}   
+
+/*sports Toggle*/
+.sports .sports-toggle {
+    display: none;
+}   
+
+/*btn-Open-Close sports*/
+#openCloseSports {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*sports Image Tile*/
+.sports .bgSports-img-tile {
+    position: relative;
+    background-image: url('./images/09nba-playoffs-ballhandlers.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*sports Top Text*/
+.sports .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*sports Time Stamp*/
+.sports .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*sports Lower Banner*/
+.sports .lower-banner-sports-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.sports .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.sports .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.sports .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;
+}
+
+/*sports Article One*/
+.sports .article-sports-one p{
+    margin: 1rem 0;
+}
+
+/*Comment Section*/
+.sports .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.sports .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.sports .comment-section input[type="text"],
+.sports .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.sports .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.sports .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.sports .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.sports .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.sports .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.sports .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* --------FINANCE SECTION------- */
+
+/*Finance View*/
+.finance .finance-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffff);
+}
+
+/*finance-name*/
+.finance .flex-finance-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Finance Header*/
+.finance h1 {
+    color: #0e0f11;
+    padding-right: 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.61) 50%, #35374121) 10%;
+}
+
+/*Finance Preview Image*/
+.finance .finance-preview-img {
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 30vh;
+    background-image: url('./images/Techyana_Manager_Emp.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*Finance Preview Text*/
+.finance .finance-preview-text {
+    position: absolute;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to bottom, rgba(196, 194, 194, 0), #ffffffd2);
+    padding-bottom: 1rem;
+    z-index: 0;
+    width: 20vw;
+}
+
+/*finance Under Line*/
+.finance .finance-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #056eaa;
+    margin-bottom: 1rem;
+}
+
+/*finance Toggle*/
+.finance .finance-toggle {
+    display: none;
+}
+
+/*btn-Open-Close finance*/
+#openCloseFinance {
+    background-color: #008CBA; /* Change to match your site's theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/*finance Image Tile*/
+.finance .bgFinance-img-tile {
+    position: relative;
+    background-image: url('./images/Luvuyo_Bhele.png');
+    display: block;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0;
+    margin: 2rem 0rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 28vh;
+}
+
+/*finance Top Text*/
+.finance .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: linear-gradient(to right, #2e2e2e, #ffffff00);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+/*finance Time Stamp*/
+.finance .time-stamp {
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*finance Lower Banner*/
+.finance .lower-banner-finance-one {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#ffffff, #ffffff00);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*low banner image*/
+.finance .lower-banner-img-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15vh;
+    max-width: 100%;
+}
+
+/*Lower banner Content One Header*/
+.finance .lower-banner-content-one h3 {
+    color: #000000;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+/*Lower banner Content One Paragraph*/
+.finance .lower-banner-content-one p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    width: 75%;
+}
+
+/*finance Article One*/
+.finance .article-finance-one p{
+    margin: 1rem 0;
+}
+
+/*Comment Section*/
+.finance .comment-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Form*/
+.finance .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/*Comment Input*/
+.finance .comment-section input[type="text"],
+.finance .comment-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/*Comment Button*/
+.finance .comment-section button {
+    padding: 0.5rem 1rem;
+    background-color: #1562d6;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*Comment List*/
+.finance .comment-section .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Comment Item*/
+.finance .comment-section .comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Comment Author*/
+.finance .comment-section .comment-item .comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Content*/
+.finance .comment-section .comment-item .comment-content {
+    margin-bottom: 0.5rem;
+}
+
+/*Comment Timestamp*/
+.finance .comment-section .comment-item .comment-timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+
+
+
+
+    /*footer*/
+     footer {
+        padding: 0.5rem 0;
+    }
+
+}
